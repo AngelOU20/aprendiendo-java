@@ -45,9 +45,6 @@ public class UserRestController {
         User user2 = new User("Lionel Andres", "Messi Cuccitini");
         User user3 = new User("Cristiano Ronaldo", "Dos Santos Aveiro");
 
-
-//      Usando la clase helpers Arrays
-        List<User> users = Arrays.asList(user, user2, user3);
 /*
         List<User> users = new ArrayList<>();
         users.add(user);
@@ -55,6 +52,10 @@ public class UserRestController {
         users.add(user3);
 */
 
-        return users;
+//      Usando la clase helpers Arrays
+//      List<User> users = Arrays.asList(user, user2, user3);
+
+        return Arrays.asList(user, user2, user3); // O return users
+
     }
 }
